@@ -89,3 +89,91 @@
 .alert:empty {
   display: none;
 }
+
+/* General Styling */
+
+body {
+  font-family: "Cantarell", system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Nunito Sans";
+}
+
+img {
+  width: 400px;
+  max-width: 90%;
+  display: block;
+  margin: 12px auto;
+}
+
+a {
+  color: #507dbc;
+}
+
+a:hover {
+  color: #86bbd8;
+}
+
+
+.navigation {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Nunito Sans";
+  padding: 12px 12px 0;
+  box-sizing: border-box;
+}
+
+.nav-item {
+  flex: 1;
+}
+
+.nav-header {
+  font-size: 1.4em;
+  color: #0b2027 !important;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 900;
+  margin-top: 4px;
+
+}
+
+.nav-links {
+  text-align: right;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding-right: 9px;
+}
+
+.content-main {
+  max-width: 768px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0px 16px;
+}
+
+/*Page Layouts*/
+
+.super-header {
+  margin-bottom: 0;
+}
+
+.sub-header {
+  margin-top: 0;
+}
+
+.page-title, .super-header {
+  margin-top: 6px;
+}
+
+
