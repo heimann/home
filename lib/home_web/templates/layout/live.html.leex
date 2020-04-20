@@ -1,11 +1,30 @@
-<main role="main" class="container">
+<main role="main">
+  <header class="navigation">
+    <%= live_redirect to: Routes.page_path(@socket, :index) do %>
+      <span class="nav-header nav-item">
+        dmeh
+      </span>
+    <% end %>
+    <ul class="nav-links nav-item">
+      <li>
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Link</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Link</a>
+      </li>
+    </ul>
+  </header>
+
   <p class="alert alert-info" role="alert"
     phx-click="lv:clear-flash"
     phx-value-key="info"><%= live_flash(@flash, :info) %></p>
-
   <p class="alert alert-danger" role="alert"
     phx-click="lv:clear-flash"
     phx-value-key="error"><%= live_flash(@flash, :error) %></p>
-
-  <%= @inner_content %>
+  <section class="container">
+    <%= @inner_content %>
+  </section>
 </main>
