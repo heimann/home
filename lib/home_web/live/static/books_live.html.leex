@@ -1,0 +1,20 @@
+<h1>Books</h1>
+<p>
+  Largely inspired by <a href="https://patrickcollison.com/bookshelf">Patrick
+    Collison's Bookshelf</a> this is just a list of some of my books. 
+</p>
+<p>
+  The list is currently a work in progress, I've just barely begun cataloging 
+  my books and putting them in here. It should grow over time. For now I don't 
+  have any notes on the books in here or recommendations but I'm thinking of
+  adding that as I go.
+</p>
+<ul>
+  <%= for book <- @books do %>
+  <li>
+    <a href="<%= book["fields"]["Purchase Link"] %>">
+    <%= book["fields"]["Title"] %>
+    </a>
+  </li>
+  <% end %>
+</ul>

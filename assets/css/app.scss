@@ -20,6 +20,10 @@ body { font-family: 'Inter', sans-serif; }
   --font-heavy: 600;
 }
 
+html {
+margin-left: calc(100vw - 100%);
+}
+
 /* LiveView specific classes for your customizations */
 .invalid-feedback {
   color: #a94442;
@@ -137,6 +141,11 @@ a:hover {
 
 p {
   font-size: var(--font-xs);
+}
+
+ul li {
+  margin: 0 14px;
+  padding: 0;
 }
 
 

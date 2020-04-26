@@ -9,6 +9,9 @@
       <li>
         <%= live_redirect "Now", to: Routes.live_path(@socket, HomeWeb.NowLive), class: "nav-link" %>
       </li>
+      <li>
+        <%= live_redirect "Books", to: Routes.live_path(@socket, HomeWeb.BooksLive), class: "nav-link" %>
+      </li>
     </ul>
   </header>
 

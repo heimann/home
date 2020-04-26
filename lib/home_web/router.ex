@@ -17,6 +17,7 @@ defmodule HomeWeb.Router do
   scope "/", HomeWeb do
     pipe_through :browser
 
+    live "/books", BooksLive
     live "/now", NowLive
     live "/", PageLive, :index
   end
