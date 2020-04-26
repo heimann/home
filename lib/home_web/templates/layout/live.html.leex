@@ -6,23 +6,9 @@
       </span>
     <% end %>
     <ul class="nav-links nav-item">
-      <%= if false do %>
       <li>
-        <a href="#" class="nav-link">Notes to Self</a>
+        <%= live_redirect "Now", to: Routes.live_path(@socket, HomeWeb.NowLive), class: "nav-link" %>
       </li>
-      <li>
-        <a href="#" class="nav-link">Bookshelf</a>
-      </li>
-      <li>
-        <a href="#" class="nav-link">Now</a>
-      </li>
-      <li>
-        <a href="#" class="nav-link">Ramblings</a>
-      </li>
-      <li>
-        <a href="#" class="nav-link">Tools</a>
-      </li>
-    <% end %>
     </ul>
   </header>
 
