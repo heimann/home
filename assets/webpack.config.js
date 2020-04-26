@@ -34,36 +34,8 @@ module.exports = (env, options) => {
           },
         },
         {
-          test: /\.css$/,
-          use: [
-            MiniCssExtractPlugin.loader,
-            {
-              loader: "css-loader",
-              options: {
-                sourceMap: devMode,
-              },
-            },
-          ],
-        },
-        {
-          test: /\.scss$/,
-          use: [
-            MiniCssExtractPlugin.loader,
-            {
-              loader: "css-loader",
-            },
-            {
-              loader: "postcss-loader",
-              options: {
-                plugins: function() {
-                  return [require("precss"), require("autoprefixer")];
-                },
-              },
-            },
-            {
-              loader: "sass-loader",
-            },
-          ],
+          test: /\.[s]?css$/,
+          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         },
       ],
     },
