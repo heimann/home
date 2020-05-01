@@ -20,7 +20,7 @@ defmodule Home.MixProject do
   def application do
     [
       mod: {Home.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :con_cache]
     ]
   end
 
@@ -45,7 +45,8 @@ defmodule Home.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:tesla, "~> 1.3.0"},
-      {:hackney, "~> 1.15.2"}
+      {:hackney, "~> 1.15.2"},
+      {:con_cache, "~> 0.13"}
     ]
   end
 

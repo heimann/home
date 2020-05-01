@@ -12,9 +12,15 @@ defmodule Home.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Home.PubSub},
       # Start the Endpoint (http/https)
-      HomeWeb.Endpoint
+      HomeWeb.Endpoint,
       # Start a worker by calling: Home.Worker.start_link(arg)
       # {Home.Worker, arg}
+      {ConCache,
+       [
+         name: :dmeh_cache,
+         ttl_check_interval: :timer.minutes(1),
+         global_ttl: :timer.minutes(5)
+       ]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

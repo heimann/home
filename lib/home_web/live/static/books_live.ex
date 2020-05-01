@@ -4,7 +4,11 @@ defmodule HomeWeb.BooksLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    books = Airtable.books()
+    books =
+      ConCache.get_or_store(:dmeh_cache, "books", fn ->
+        Airtable.books()
+      end)
+
     {:ok, assign(socket, :books, books)}
   end
 end
