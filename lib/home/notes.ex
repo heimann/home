@@ -14,4 +14,9 @@ defmodule Home.Notes do
   def all_notes do
     @notes
   end
+
+  def get_note_by_title(title) do
+    all_notes()
+    |> Enum.find(&(&1.title == title))
+  end
 end

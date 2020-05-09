@@ -3,7 +3,8 @@ defmodule Home.Notes.Note do
   defstruct [:title, :body, :description, :tags, :date]
 
   def parse!(filename) do
-    parse_contents(File.read!(filename))
+    contents = parse_contents(File.read!(filename))
+    struct!(__MODULE__, contents)
   end
 
   defp parse_contents(contents) do
