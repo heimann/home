@@ -46,6 +46,7 @@ defmodule Home.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:tesla, "~> 1.3.0"},
       {:hackney, "~> 1.15.2"},
+      {:slugify, "~> 1.3.0"},
       {:con_cache, "~> 0.13"}
     ]
   end

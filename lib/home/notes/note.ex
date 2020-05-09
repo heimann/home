@@ -1,10 +1,16 @@
 defmodule Home.Notes.Note do
-  @enforce_keys [:title, :body, :description, :tags, :date]
-  defstruct [:title, :body, :description, :tags, :date]
+  @enforce_keys [:title, :slug, :body, :description, :tags, :date]
+  defstruct [:title, :slug, :body, :description, :tags, :date]
 
   def parse!(filename) do
     contents = parse_contents(File.read!(filename))
-    struct!(__MODULE__, contents)
+    IO.inspect(contents)
+
+    slug =
+      Keyword.get(contents, :title)
+      |> Slug.slugify()
+
+    struct!(__MODULE__, contents ++ [slug: slug])
   end
 
   defp parse_contents(contents) do
