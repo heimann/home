@@ -23,4 +23,9 @@ defmodule Home.Notes do
     all_notes()
     |> Enum.find(&(&1.title == title))
   end
+
+  def get_note_by_slug(slug) do
+    all_notes()
+    |> Enum.find(&(&1.slug == slug))
+  end
 end

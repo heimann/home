@@ -10,7 +10,7 @@
         <%= live_redirect "Now", to: Routes.live_path(@socket, HomeWeb.NowLive), class: "nav-link" %>
       </li>
       <li>
-        <%= live_redirect "Notes", to: Routes.notes_path(@socket, :index), class: "nav-link" %>
+        <%= live_redirect "Notes", to: Routes.notes_index_path(@socket, :index), class: "nav-link" %>
       </li>
       <li>
         <%= live_redirect "Bookshelf", to: Routes.live_path(@socket, HomeWeb.BooksLive), class: "nav-link" %>

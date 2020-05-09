@@ -33,7 +33,9 @@ defmodule Home.Notes.Note do
     do: String.trim(value)
 
   defp parse_attr(:body, value),
-    do: value |> Earmark.as_html!() |> Home.Highlighter.highlight()
+    do:
+      value
+      |> Earmark.as_html!(%Earmark.Options{code_class_prefix: "language-"})
 
   defp parse_attr(:tags, value),
     do: String.trim(value)
