@@ -47,6 +47,8 @@ defmodule Home.MixProject do
       {:tesla, "~> 1.3.0"},
       {:hackney, "~> 1.15.2"},
       {:slugify, "~> 1.3.0"},
+      {:earmark, "~> 1.3"},
+      {:makeup_elixir, "~> 0.14"},
       {:con_cache, "~> 0.13"}
     ]
   end

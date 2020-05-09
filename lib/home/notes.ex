@@ -1,6 +1,10 @@
 defmodule Home.Notes do
   alias Home.Notes.Note
 
+  for app <- [:earmark, :makeup_elixir] do
+    Application.ensure_all_started(app)
+  end
+
   notes_paths = "notes/**/*.md" |> Path.wildcard() |> Enum.sort()
 
   notes =

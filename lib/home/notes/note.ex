@@ -4,7 +4,6 @@ defmodule Home.Notes.Note do
 
   def parse!(filename) do
     contents = parse_contents(File.read!(filename))
-    IO.inspect(contents)
 
     slug =
       Keyword.get(contents, :title)
@@ -34,7 +33,7 @@ defmodule Home.Notes.Note do
     do: String.trim(value)
 
   defp parse_attr(:body, value),
-    do: String.trim(value)
+    do: value |> Earmark.as_html!() |> Home.Highlighter.highlight()
 
   defp parse_attr(:tags, value),
     do: String.trim(value)
