@@ -1,3 +1,4 @@
+import Prism from "prismjs";
 // We need to import the CSS so that webpack will load it.
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
@@ -13,15 +14,29 @@ import "../css/app.scss";
 //     import socket from "./socket"
 //
 import "phoenix_html";
-import { Socket } from "phoenix";
+import {Socket} from "phoenix";
 import NProgress from "nprogress";
-import { LiveSocket } from "phoenix_live_view";
+import {LiveSocket} from "phoenix_live_view";
 
 let csrfToken = document
   .querySelector("meta[name='csrf-token']")
   .getAttribute("content");
+
+let Hooks = {}
+
+Hooks.PrismFormatter = {
+  mounted() {
+    Prism.highlightAll();
+  },
+  updated() {
+    Prism.highlightAll();
+  },
+}
+
+
 let liveSocket = new LiveSocket("/live", Socket, {
-  params: { _csrf_token: csrfToken },
+  hooks: Hooks,
+  params: {_csrf_token: csrfToken},
 });
 
 // Show progress bar on live navigation and form submits
