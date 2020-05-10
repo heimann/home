@@ -5,6 +5,8 @@
       "prismjs",
       {
         "languages": [
+          "bash",
+          "diff",
           "css",
           "elixir",
           "erlang",
