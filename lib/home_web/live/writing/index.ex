@@ -1,4 +1,4 @@
-defmodule HomeWeb.NotesLive.Index do
+defmodule HomeWeb.WritingLive.Index do
   use HomeWeb, :live_view
 
   def mount(_, _, socket) do

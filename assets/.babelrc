@@ -15,8 +15,8 @@
           "markdown",
           "rust"
         ],
-        "theme": "tomorrow",
-        "css": true
+        "css": true,
+        "plugins": ["line-highlight"]
       }
     ]
   ]

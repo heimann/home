@@ -1,0 +1,4 @@
+<h1 class="super-header"><%= @text.title %></h1>
+<div phx-hook="PrismFormatter">
+  <%= {:safe, @text.body} %>
+</div>
