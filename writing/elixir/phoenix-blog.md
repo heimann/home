@@ -284,4 +284,121 @@ end
 ```
 
 ### Our Blog Context
+
+It's worth taking a breath here and taking stock of what we have. While we're
+pretty far away from our finished blog, we have a working model of what our 
+`Post`s will look like, and that's a great start. Philosophically, we're
+taking the approach of building up the application first here, meaning the
+functionality of it all, and then adding form (styling etc later).
+
+#### A Context
+
+The job of our `Blog` context is going to be to create the main API our web
+application interfaces with when grabbing our posts to display them to our
+visitors. It's going to have a couple of important functions, the most prominent
+being `all_posts` and `get_post_by_slug/1` which we'll use to grab a specific
+blog post when a visitor navigates to `/posts/:slug`.
+
+Oh, one more thing. Our actual posts are going to live in a folder called `blog`
+at the root of our project. Let's make that now.
+
+```bash
+$ ls
+_build/ config/ lib/ mix.lock README.md
+assets/ deps/ mix.exs priv/ test/
+$ mkdir blog
+$ touch blog/our_first_post.md
+$ touch blog/example_site/blog.ex
+```
+
+Open up `blog/our_first_post.md` and add the following content:
+
+```markdown
+==title==
+Our first post!
+
+==description==
+Our very first blog post. Look at us!!
+
+==tags==
+learning, fun, awesomeness, cheesy_tags
+
+==date==
+2020-05-11
+
+==body==
+## A Post
+There once was a post that knew a tree, the tree said to the post, what's
+cracking post? And the post said: nothing, I'm made of steel.
+```
+
+Ok now that we have that, let's venture into our `Blog` context. First of all,
+let's make sure our dependent application is started and then locate our posts.
+Open up `lib/example_site/blog.ex`:
+
+<video controls style="width: 95% margin: 0 auto;">
+  <source src="../images/blog6.mp4" type="video/mp4">
+</video>
+
+We have something here! I like to get something tangible as quickly as possible
+when I write code, it helps me verify that what I have is working and build up
+a better mental model of the code in my head. For that reason, let's take this 
+for a spin in elixir's interactive repl:
+
+<video controls style="width: 95% margin: 0 auto;">
+  <source src="../images/blog7.mp4" type="video/mp4">
+</video>
+
+That's our post! Shit like this gets me so excited everytime. Ok let's try to 
+give that post to our `parse!/1` function!
+
+<video controls style="width: 95% margin: 0 auto;">
+  <source src="../images/blog8.mp4" type="video/mp4">
+</video>
+
+It's alive!!
+
+Now let's build up our context api, `all_posts`, and `get_post_by_slug`:
+
+<video controls style="width: 95% margin: 0 auto;">
+  <source src="../images/blog9.mp4" type="video/mp4">
+</video>
+
+Once again, let's test it out in iex!
+
+<video controls style="width: 95% margin: 0 auto;">
+  <source src="../images/blog10.mp4" type="video/mp4">
+</video>
+
+Here's our finished `lib/example_site/blog.ex`:
+```elixir
+defmodule ExampleSite.Blog do
+  alias ExampleSite.Blog.Post
+
+  Application.ensure_all_started(:earmark)
+
+  posts_paths = "blog/**/*.md" |> Path.wildcard() |> Enum.sort()
+
+  posts =
+    for post_path <- posts_paths do
+      @external_resource Path.relative_to_cwd(post_path)
+      Post.parse!(post_path)
+    end
+
+  @posts posts
+
+  def all_posts do
+    @posts
+  end
+
+  def get_post_by_slug(slug) do
+    all_posts()
+    |> Enum.find(&(&1.slug == slug))
+  end
+end
+```
+
+Ok that's basically it for the creating a blog part, but it would be no fun if
+we stopped here so let's make this an actual blog with links and a frontpage :)
+
 ... wip
