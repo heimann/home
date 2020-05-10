@@ -120,7 +120,7 @@ when we try to create a new struct. As a shorthand we're just passing the
 enforced keys straight into `defstruct` since we want all of our keys present.
 
 <video controls style="width: 95% margin: 0 auto;">
-  <source src="../images/blog1.webm" type="video/webm">
+  <source src="../images/blog1.mp4" type="video/mp4">
 </video>
 
 Now, we're going to build up the rest of the file by starting from the end of
@@ -172,7 +172,7 @@ For each `section`, we'll have a function that parses that attr that takes
 an atom (the attr), and it's value. Like so:
 
 <video controls style="width: 95% margin: 0 auto;">
-  <source src="../images/blog2.webm" type="video/webm">
+  <source src="../images/blog2.mp4" type="video/mp4">
 </video>
 
 That takes care of most of the sections, but notice that we left out `body`.
@@ -217,13 +217,13 @@ function for our `body`. Note that we add it above the function we just added
 so Elixir can do it's pattern matching magic.
 
 <video controls style="width: 95% margin: 0 auto;">
-  <source src="../images/blog3.webm" type="video/webm">
+  <source src="../images/blog3.mp4" type="video/mp4">
 </video>
 
 We're getting closer! Time to put these functions into use:
 
 <video controls style="width: 95% margin: 0 auto;">
-  <source src="../images/blog4a.webm" type="video/webm">
+  <source src="../images/blog4.mp4" type="video/mp4">
 </video>
 
 That's a good amount of code all at once, let's break it down a little. We take
@@ -236,7 +236,7 @@ Now, let's write the final function in this file, the one that actually parses
 a file given it's filename and puts it all together.
 
 <video controls style="width: 95% margin: 0 auto;">
-  <source src="../images/blog5a.webm" type="video/webm">
+  <source src="../images/blog5.mp4" type="video/mp4">
 </video>
 
 That's it! Our final `lib/example_site/blog/post.ex`:
