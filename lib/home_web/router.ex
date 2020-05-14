@@ -19,6 +19,7 @@ defmodule HomeWeb.Router do
 
     live "/books", BooksLive
     live "/now", NowLive
+    live "/plan", PlanLive
     live "/writing", WritingLive.Index, :index
     live "/writing/:slug", WritingLive.Show, :show
     live "/", PageLive, :index
