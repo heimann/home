@@ -17,7 +17,7 @@ Every time I see a new post talking about “how to be productive” or “incre
 
 I _think_ that this relentless pursuit of productivity is actually very dangerous. Don’t get me wrong, I’m a tool aficionado and I’ve spent countless hours perfecting my vim configuration and dotfiles. But the deeper I get into this field, the more programming and software making feels like art to me, and treating it transactionally seems like a great way to curse yourself into local maxima.
 
-It’s the classic Apple thing, if you’re constantly look at the data, you’ll optimize whatever is in front of you. If you’re constantly chasing productivity, you’ll optimize time spent producing. But, I’ll argue that what you want to optimize for is time in flow. 
+It’s the classic Apple thing, if you’re constantly looking at the data, you’ll optimize whatever is in front of you. If you’re constantly chasing productivity, you’ll optimize time spent producing. But, I'd argue that what you want to optimize for is time in flow. 
 
 Flow is a great, powerful beast. I listened to a podcast recently where Daniel Gross described happiness as being in flow, I think that’s true for me at least. But the other side of that is I definitely do my best work in flow. Best, not measured by volume of output but best as measured by my own taste and aesthetics? 
 
