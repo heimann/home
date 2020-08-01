@@ -1,20 +1,17 @@
-<h1 class="super-header">Bookshelf</h1>
+<h1 class="super-header">Input</h1>
 <p>
-  Largely inspired by <a href="https://patrickcollison.com/bookshelf">Patrick
-    Collison's Bookshelf</a> this is just a list of some of my books. 
+  Here are some of the writing, and assorted media that have shaped me the most throughout my life. Some are serious, some are funy, and some are downright silly, but largely I consider them a core part of what makes me, me.
 </p>
-<p>
-  The list is currently a work in progress, I've just barely begun cataloging 
-  my books and putting them in here. It should grow over time. For now I don't 
-  have any notes on the books in here or recommendations but I'm thinking of
-  adding that as I go.
-</p>
-<ul>
-  <%= for book <- @books do %>
-  <li>
-    <a href="<%= book["fields"]["Purchase Link"] %>">
-    <%= book["fields"]["Title"] %>
-    </a>
-  </li>
+<%= for {c, book_list} <- @books do %>
+
+  <h2 class="sub-header" id="<%= c %>"><%= c %></h2>
+  <ul>
+  <%= for book <- book_list do %>
+      <li>
+        <a href="<%= book.url %>">
+          <%= book.author %> - <%= book.title %>
+        </a>
+      </li>
   <% end %>
-</ul>
+  </ul>
+<% end %>

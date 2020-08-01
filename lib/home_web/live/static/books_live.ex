@@ -1,13 +1,12 @@
 defmodule HomeWeb.BooksLive do
   use HomeWeb, :live_view
-  alias Home.Airtable
+  alias Home.Reading
 
   @impl true
   def mount(_params, _session, socket) do
     books =
-      ConCache.get_or_store(:dmeh_cache, "books", fn ->
-        Airtable.books()
-      end)
+      Reading.all_categories()
+      |> Enum.map(fn c -> {c, Reading.list_books(c)} end)
 
     {:ok, assign(socket, :books, books)}
   end

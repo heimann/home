@@ -13,10 +13,10 @@
         <%= live_redirect "Plan", to: Routes.live_path(@socket, HomeWeb.PlanLive), class: "nav-link" %>
       </li>
       <li>
-        <%= live_redirect "Writing", to: Routes.writing_index_path(@socket, :index), class: "nav-link" %>
+        <%= live_redirect "Input", to: Routes.live_path(@socket, HomeWeb.BooksLive), class: "nav-link" %>
       </li>
       <li>
-        <%= live_redirect "Bookshelf", to: Routes.live_path(@socket, HomeWeb.BooksLive), class: "nav-link" %>
+        <%= live_redirect "Output", to: Routes.writing_index_path(@socket, :index), class: "nav-link" %>
       </li>
     </ul>
   </header>
