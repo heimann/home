@@ -46,7 +46,7 @@ defmodule Home.Reading.Books do
       isbn: "9780312944445"
     },
     %Book{
-      category: "Creation Stories / Myths",
+      category: "Interesting People & Companies",
       title:
         "Prisoner's Dilemma: John von Neumann, Game Theory, and the Puzzle of the Bomb",
       author: "William Poundstone",
@@ -124,6 +124,123 @@ defmodule Home.Reading.Books do
       url:
         "https://www.goodreads.com/book/show/138551.The_Robot_Novels?from_search=true&from_srp=true&qid=ng2AQ4fIJO&rank=3",
       isbn: "9780345331199"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "Leonardo: The First Scientist",
+      author: "Michael White",
+      url:
+        "https://www.goodreads.com/book/show/196061.Leonardo?from_search=true&from_srp=true&qid=QSDOVlvP3Z&rank=1",
+      isbn: "9780349112749"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "Richard Feynman: A Life in Science",
+      author: "John & Mary Gribbin",
+      url:
+        "https://www.goodreads.com/book/show/56165.Richard_Feynman?ac=1&from_search=true&qid=wvWOYbY6OU&rank=2",
+      isbn: "9780452276314"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "Einstein: A Life in Science",
+      author: "Michael White & John Gribbin",
+      url:
+        "https://www.goodreads.com/book/show/755121.Einstein?ac=1&from_search=true&qid=rroaRfUYRo&rank=1",
+      isbn: "9780743263894"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "Becoming Steve Jobs",
+      author: "Brent Schlender",
+      url:
+        "https://www.goodreads.com/book/show/22318382-becoming-steve-jobs?from_search=true&from_srp=true&qid=Tc607Bedaq&rank=1",
+      isbn: "9780385347402"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "The Everything Store: Jeff Bezos and the Age of Amazon",
+      author: "Brad Stone",
+      url: "https://www.goodreads.com/book/show/17660462-the-everything-store",
+      isbn: "9780316219266"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "Sam Walton: Made in America",
+      author: "Sam Walton & John Huey",
+      url:
+        "https://www.goodreads.com/book/show/10631.Sam_Walton?ac=1&from_search=true&qid=v5FaK4hOYd&rank=1",
+      isbn: "9780553562835"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "Madame Curie: A Biography",
+      author: "Eve Curie",
+      url:
+        "https://www.goodreads.com/book/show/341166.Madame_Curie?ac=1&from_search=true&qid=5PFXWVbhCb&rank=1",
+      isbn: "9780306810381"
+    },
+    %Book{
+      category: "Interesting People & Companies",
+      title: "Alvarez",
+      author: "Luis W. Alvarez",
+      url:
+        "https://www.goodreads.com/book/show/3226232-alvarez?from_search=true&from_srp=true&qid=Earfr0xn7a&rank=10",
+      isbn: "9780465001156"
+    },
+    %Book{
+      category: "Hobbies",
+      title: "Stick and Rudder: An Explanation of the Art of Flying",
+      author: "Wolfgang Langewiesche",
+      url:
+        "https://www.goodreads.com/book/show/680115.Stick_and_Rudder?from_search=true&from_srp=true&qid=TYSTcVrwyw&rank=1",
+      isbn: "9780070362406"
+    },
+    %Book{
+      category: "Fiction",
+      title: "The Master and Margharita",
+      author: "Mikhail Bulgakov",
+      url:
+        "https://www.goodreads.com/book/show/117833.The_Master_and_Margarita?from_search=true&from_srp=true&qid=swPeqZqvth&rank=1",
+      isbn: "9780679760801"
+    },
+    %Book{
+      category: "Fiction",
+      title: "Crime and Punishment",
+      author: "Fyodor Dostoyevsky",
+      url: "https://www.goodreads.com/book/show/7144.Crime_and_Punishment",
+      isbn: "9780143058144"
+    },
+    %Book{
+      category: "Fiction",
+      title: "The Metamorphosis",
+      author: "Franz Kafka",
+      url: "https://www.goodreads.com/book/show/485894.The_Metamorphosis",
+      isbn: "9789871165070"
+    },
+    %Book{
+      category: "Fiction",
+      title: "Siddharta",
+      author: "Herman Hesse",
+      url:
+        "https://www.goodreads.com/book/show/52036.Siddhartha?ac=1&from_search=true&qid=JWq9cbypBU&rank=1",
+      isbn: "9789502531328"
+    },
+    %Book{
+      category: "Fiction",
+      title: "The Magician of Lublin",
+      author: "Isaac Bashevis Singer",
+      url:
+        "https://www.goodreads.com/book/show/940167.The_Magician_of_Lublin?ac=1&from_search=true&qid=snwIbNPXzK&rank=1",
+      isbn: "9780140048070"
+    },
+    %Book{
+      category: "Fiction",
+      title: "Zen and the Art of Motorcycle Maintenance",
+      author: "Robert M. Pirsig",
+      url:
+        "https://www.goodreads.com/book/show/629.Zen_and_the_Art_of_Motorcycle_Maintenance?ac=1&from_search=true&qid=GoXKDGCQT5&rank=1",
+      isbn: "9780060589462"
     }
   ]
 
