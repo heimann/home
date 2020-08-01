@@ -241,6 +241,36 @@ defmodule Home.Reading.Books do
       url:
         "https://www.goodreads.com/book/show/629.Zen_and_the_Art_of_Motorcycle_Maintenance?ac=1&from_search=true&qid=GoXKDGCQT5&rank=1",
       isbn: "9780060589462"
+    },
+    %Book{
+      category: "Graphic Novels",
+      title: "Uncle Scrooge and Donald Duck: The Son of the Sun",
+      author: "Don Rosa",
+      url:
+        "https://www.goodreads.com/book/show/18444220-uncle-scrooge-and-donald-duck?from_search=true&from_srp=true&qid=nZhE60SPAZ&rank=2",
+      isbn: "9781606997420"
+    },
+    %Book{
+      category: "Graphic Novels",
+      title: "Watchmen",
+      author: "Alan Moore",
+      url:
+        "https://www.goodreads.com/book/show/472331.Watchmen?from_search=true&from_srp=true&qid=Hku7x9fVjj&rank=2",
+      isbn: "9780930289232"
+    },
+    %Book{
+      category: "Graphic Novels",
+      title: "Maus",
+      author: "Art Spiegelman",
+      url: "https://www.goodreads.com/book/show/15195.The_Complete_Maus",
+      isbn: "9780141014081"
+    },
+    %Book{
+      category: "Graphic Novels",
+      title: "Persepolis",
+      author: "Marjane Satrapi",
+      url: "https://www.goodreads.com/book/show/991197.The_Complete_Persepolis",
+      isbn: "9780375714832"
     }
   ]
 
