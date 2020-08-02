@@ -271,6 +271,14 @@ defmodule Home.Reading.Books do
       author: "Marjane Satrapi",
       url: "https://www.goodreads.com/book/show/991197.The_Complete_Persepolis",
       isbn: "9780375714832"
+    },
+    %Book{
+      category: "Science Fiction",
+      title: "The Left Hand of Darkness",
+      author: "Ursula K. Le Guin",
+      url:
+        "https://www.goodreads.com/book/show/18423.The_Left_Hand_of_Darkness",
+      isbn: "9780060125745"
     }
   ]
 
