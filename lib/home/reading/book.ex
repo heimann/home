@@ -1,3 +1,11 @@
 defmodule Home.Reading.Book do
-  defstruct [:category, :title, :isbn, :url, :author, :note]
+  defstruct [
+    :author,
+    :category,
+    :details,
+    :isbn,
+    :note,
+    :title,
+    :url
+  ]
 end

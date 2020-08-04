@@ -8,7 +8,9 @@ defmodule Home.Reading.Books do
       author: "Frank Herbert",
       url:
         "https://www.goodreads.com/book/show/44767458-dune?from_search=true&from_srp=true&qid=1H3AdWvXRR&rank=1",
-      isbn: "9780593099322"
+      isbn: "9780593099322",
+      details:
+        "I don't think I've read any other book as many times as Dune. It gets better each time."
     },
     %Book{
       category: "Science Fiction",
@@ -16,7 +18,8 @@ defmodule Home.Reading.Books do
       author: "Isaac Asimov",
       url:
         "https://www.goodreads.com/book/show/46654.The_Foundation_Trilogy?from_search=true&from_srp=true&qid=owYvSbguok&rank=4",
-      isbn: "9780380508563"
+      isbn: "9780380508563",
+      details: "Another series that gets better with each reading."
     },
     %Book{
       category: "Science Fiction",
@@ -25,7 +28,7 @@ defmodule Home.Reading.Books do
       url:
         "https://www.goodreads.com/book/show/167847.Marooned_in_Realtime?from_search=true&from_srp=true&qid=CImuXAO41B&rank=1",
       isbn: "9780765308849",
-      note:
+      details:
         "The second book in a series, first one is worth reading but you can absolutely read this without having read the prequel"
     },
     %Book{
@@ -52,7 +55,9 @@ defmodule Home.Reading.Books do
       author: "William Poundstone",
       url:
         "https://www.goodreads.com/book/show/29506.Prisoner_s_Dilemma?from_search=true&from_srp=true&qid=JsqVJ7l8iO&rank=2",
-      isbn: "9780385415804"
+      isbn: "9780385415804",
+      details:
+        "Three fascinating topics, interwoven into one book. Couldn't put this one down."
     },
     %Book{
       category: "Science Fiction",
@@ -115,7 +120,9 @@ defmodule Home.Reading.Books do
       author: "Arthur C. Clarke",
       url:
         "https://www.goodreads.com/book/show/112537.Rendezvous_with_Rama?ac=1&from_search=true&qid=BMXnK83th5&rank=1",
-      isbn: "9781857231588"
+      isbn: "9781857231588",
+      details:
+        "The mood of this book carries with me more than anything else. Stunning atmospheres."
     },
     %Book{
       category: "Science Fiction",
@@ -155,7 +162,8 @@ defmodule Home.Reading.Books do
       author: "Brent Schlender",
       url:
         "https://www.goodreads.com/book/show/22318382-becoming-steve-jobs?from_search=true&from_srp=true&qid=Tc607Bedaq&rank=1",
-      isbn: "9780385347402"
+      isbn: "9780385347402",
+      details: "If you find Walter Isaacson boring, this is better."
     },
     %Book{
       category: "Interesting People & Companies",
