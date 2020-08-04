@@ -13,6 +13,9 @@
 </p>
 <ul>
   <li>
+    <%= live_redirect "The Trials and Tribulations of Making Stuff", to: Routes.writing_show_path(@socket, :show, "the-trials-and-tribulations-of-making-stuff") %>
+  </li>
+  <li>
     <%= live_redirect "On Productivity", to: Routes.writing_show_path(@socket, :show, "on-productivity") %>
   </li>
 </ul>
