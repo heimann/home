@@ -243,4 +243,19 @@ ul li {
   height: 100%;
 }
 
+.input-list {
+  list-style: none;
+}
+
+.input-list li {
+  margin-bottom: 2px;
+}
+
+.input-list-detail {
+  display: block;
+  font-size: 0.8em;
+  margin: 4px 0 8px 14px;
+  padding: 0 0 2px 8px;
+  border-left: 0.12em solid #7E2E84;
+}
 

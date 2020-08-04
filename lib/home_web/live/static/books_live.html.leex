@@ -9,12 +9,15 @@
 <%= for {c, book_list} <- @books do %>
 
   <h2 class="sub-header" id="<%= c %>"><%= c %></h2>
-  <ul>
+  <ul class="input-list">
   <%= for book <- book_list do %>
       <li>
         <a href="<%= book.url %>">
-          <%= book.author %> - <%= book.title %>
+          - <%= book.author %> - <%= book.title %>
         </a>
+        <%= if Map.get(book, :details) do %>
+          <span class="input-list-detail"><%= book.details %></span>
+        <% end %>
       </li>
   <% end %>
   </ul>
