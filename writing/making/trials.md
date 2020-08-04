@@ -81,7 +81,7 @@ gumption](https://www.goodreads.com/book/show/629.Zen_and_the_Art_of_Motorcycle_
 
 Give yourself a small win or two every day and permission to relax when you’re finished. Momentum builds over time.
 
-#### 4. **What now?**
+### What now?
 Allow me to let you in on a secret: the main reason for me writing this is to publicly hold myself accountable to make more stuff. I’m putting it down into words that starting today, I will make and share (in some form or another) one thing every month for 12 months. I’ve aptly titled it “A Year of Making Stuff”. Stay tuned :)
 
 If you want to help hold me accountable give me a follow on
