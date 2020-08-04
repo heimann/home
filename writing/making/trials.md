@@ -13,7 +13,10 @@ working, making, productivity, being, progragmming
 ===body===
 I've come to realize that on some level, my love for making things is a love for avoiding the absence of making things. The soul-sucking drain of being stuck in a mode of consumption, where you cycle between dopamine sources like a digital junkie. Making things lets me forget the world around me and be consumed by a task. It allows me to focus my concentration on just one thing for a moment and it's incredibly engaging yet relaxing at the same time.
 
-Either way, for whatever reason, I've been drawn to making things for as long as I can remember. From elaborate Lego projects (like that massive indoor Lego ski lift, sorry mom) and esports websites when I was younger to startups like Purple.
+Either way, for whatever reason, I've been drawn to making things for as long as
+I can remember. From elaborate Lego projects (like that massive indoor Lego ski
+lift, sorry mom) and esports websites when I was younger to startups like
+[Purple](https://www.niemanlab.org/2016/03/with-purple-you-can-get-election-updates-and-political-info-via-text/).
 
 Maybe that's just a core human condition, maybe it's a certain form of the human condition, I'm not quite sure. Nonetheless, it's a persistent presence and the only way for me to tame that restlessness is to make stuff.
 
