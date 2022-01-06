@@ -215,6 +215,10 @@ ul li {
   font-size: 1.6em;
 }
 
+header {
+  border: 0px;
+}
+
 .sub-header {
   margin-top: 0;
   font-size: 1.2em;
