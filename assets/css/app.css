@@ -263,3 +263,38 @@ header {
   border-left: 0.12em solid #7E2E84;
 }
 
+.logo-container {
+  position: relative;
+  border: 1px solid transparent;
+  display: inline-block;
+  background-color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 6px;
+  border-radius: 12px;
+  box-shadow: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-container::after {
+  position: absolute;
+  opacity: 0;
+  box-shadow: 6.3px 12.6px 12.6px hsl(0deg 0% 0% / 0.30);
+  z-index: -1;
+}
+
+.logo-container:hover {
+  transform: scale(1.1, 1.1);
+  border: 1px solid #eeeeee;
+}
+
+.logo-container:hover::after {
+  opacity: 1;
+}
+
+
+
+.logo-container:hover {
+  box-shadow: 6.3px 12.6px 12.6px hsl(0deg 0% 0% / 0.30);
+}
+
