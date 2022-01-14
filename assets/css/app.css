@@ -137,11 +137,12 @@ pre {
 }
 
 a {
-  color: #507dbc;
+  color: #3F88C5;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #86bbd8;
+  color: #2A618D;
 }
 
 p {
